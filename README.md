@@ -41,7 +41,7 @@ Allocation is done per cluster using `round()`, with any remainder assigned to E
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/clustasplit.git
+git clone https://github.com/nabiulorko/clustasplit.git
 cd clustasplit
 
 # Install dependencies
@@ -94,45 +94,6 @@ Example header:
 4. **Download split files** — three ARFF files per dataset (training, prediction, external)
 5. **Download combined files** — three merged ARFF files combining Active + Inactive
 6. **Download summary CSV** — a tabular overview of the full split
-
----
-
-## 🛠️ Tech Stack
-
-| Library | Purpose |
-|---|---|
-| Python 3.x | Core language |
-| Streamlit | Web UI framework |
-| Pandas | DataFrame manipulation and CSV export |
-| NumPy | Numerical utilities |
-| `re` | ARFF CSV-aware line parsing |
-| `io` | In-memory string buffers for downloads |
-| WEKA ARFF | Input/output file format |
-| Google Fonts | UI typography (Plus Jakarta Sans, JetBrains Mono) |
-
----
-
-## 📁 Project Structure
-
-```
-clustasplit/
-├── clustasplit.py   # Main application (single-file Streamlit app)
-└── README.md
-```
-
----
-
-## ⚙️ Core Functions
-
-| Function | Description |
-|---|---|
-| `parse_weka_arff(text)` | Parses raw ARFF text into a Pandas DataFrame; detects the cluster column |
-| `allocate_splits(n)` | Computes Training / Prediction / External counts for a group of `n` compounds |
-| `split_dataframe(df, cluster_col)` | Splits a DataFrame per cluster and concatenates results |
-| `df_to_arff(df, relation, orig_text)` | Serialises a DataFrame back to a valid ARFF string |
-| `build_cluster_table(df, cluster_col)` | Builds a per-cluster summary table for display |
-| `render_section(label, file, acc_class)` | Renders the full upload → parse → display → download workflow for one dataset |
-
 ---
 
 ## 📄 License
