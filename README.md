@@ -1,11 +1,9 @@
 # 🔬 ClustaSplit
 
 <div align="center">
-  <img src="assets/header.png" alt="ClustaSplit Logo" width="400" />
+  <img src="assets/header.png" alt="ClustaSplit Logo" width="1000" />
   <p><strong>Cluster-aware ARFF dataset splitter for QSAR model development</strong></p>
 </div>
-
-ClustaSplit is a Streamlit web application that takes clustered WEKA ARFF files and automatically splits compounds into proportional **Training**, **Prediction**, and **External** sets — respecting cluster boundaries to ensure unbiased, reproducible machine learning workflows.
 
 ---
 
