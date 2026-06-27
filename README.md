@@ -95,7 +95,3 @@ Example header:
 5. **Download combined files** — three merged ARFF files combining Active + Inactive
 6. **Download summary CSV** — a tabular overview of the full split
 ---
-
-## 📄 License
-
-© 2024 Md. Nabiul Hoque. All rights reserved. Unauthorized reproduction or distribution is prohibited.
