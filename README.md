@@ -2,7 +2,6 @@
 
 <div align="center">
   <img src="assets/header.png" alt="ClustaSplit Logo" width="1000" />
-  <p><strong>Cluster-aware ARFF dataset splitter for QSAR model development</strong></p>
 </div>
 
 ---
